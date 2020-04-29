@@ -1,0 +1,10 @@
+.textname{
+   width: 100%;
+  height: 200rpx;
+  border: 1rpx solid red;
+  background: rebeccapurple;
+  
+}
+.name{
+  color: black;
+}

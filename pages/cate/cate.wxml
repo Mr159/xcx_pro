@@ -1,0 +1,32 @@
+<!--pages/cate/cate.wxml-->
+<view class="container">
+  <view>{{datas}}</view>
+  <view class="base">
+    <view class="input">
+      <input bindinput="oninput" value="{{intupbase}}" placeholder="请输入添加"></input>
+    </view>
+    <view class="button">
+      <!-- bindtap绑定点击事件 -->
+      <button type="primary" bindtap='onclick'>添加</button>
+    </view>
+  </view>
+
+  <view>
+  </view>
+
+  <!-- 遍历数组，用法和vue类似 -->
+  <view wx:for='{{list}}' wx:key='index'>
+      {{item}}
+      <button size="mini" bindtap="delete" data-index="{{index}}">删除</button>
+      <button size="mini" bindtap="modi" data-index="{{index}}">修改</button>
+      <view class="line">-----------------------------------------</view>
+      
+  </view>
+  
+</view>
+
+<mp-dialog title="test" show="{{true}}" bindbuttontap="tapDialogButton" 
+  buttons="{{[{text: '取消'}, {text: '确认'}]}}">
+    <view>test content</view>
+  </mp-dialog>
+

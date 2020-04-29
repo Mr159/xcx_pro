@@ -1,0 +1,8 @@
+<template name="list_top">
+  <view class="textname">
+    <text class="name">我是模板页面---{{name}}</text>
+  </view>
+  <view>
+    <text>我是模板页面---{{title}}</text>
+  </view>
+</template>

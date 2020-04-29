@@ -1,0 +1,26 @@
+<import src="/public/template/list/list.wxml"/>
+<view class="container">
+    <view class="list">
+    <view 
+    class="item"
+    wx:for="{{ users }}" wx:key="key">
+      <text>编码：{{index+1}}</text>
+      <text style="color:{{color}}">用户名：{{item.name}}</text>
+      <text>年龄：{{item.age}}</text>
+      <!-- bindtap绑定事件，data-传递数据 -->
+      <button 
+          bindtap="delete"
+          data-index="{{index}}"
+          >删除</button>
+    </view>
+  </view>
+  <template is="list_top" data="{{...text,...text2}}"/>
+  <!-- title是传的值 -->
+  <dialog title="{{title}}" bindsend="getsend" my-bg="bg">
+      <view slot="before">插槽值</view>
+      <view slot="after">插槽值</view>
+  </dialog>
+  <!-- 我是子组件传来的值 -->
+  <text>{{dialogData}}</text>
+  <van-calendar show="{{ show }}" bind:close="onClose" bind:confirm="onConfirm" />
+  </view>

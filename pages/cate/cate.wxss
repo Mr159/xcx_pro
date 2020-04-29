@@ -1,0 +1,20 @@
+/* pages/cate/cate.wxss */
+.input{
+  border: 1px solid black;
+  padding: 5px 10px;
+  width:200px;
+  height: 30px;
+  border-radius: 2px;
+  margin-left: 10px;
+  line-height: 30px;
+  
+}
+.input input{
+  text-indent: 2em;
+}
+.base{
+  display: flex
+}
+.button{
+  margin-left: 10px
+}

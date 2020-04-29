@@ -1,0 +1,16 @@
+/**app.wxss**/
+/* 引入公共样式 */
+@import "/public/style/comp.wxss";
+@import "/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss";
+.container {
+    height: 100%;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+} 
+.box{
+  color: blue;
+}
+.bg{
+  background: black;
+  color: red;
+}

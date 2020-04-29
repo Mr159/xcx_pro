@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "dialog":"/public/components/dialog/dialog",
+    "van-calendar": "@vant/weapp/calendar/index"
+  },
+  "navigationBarTitleText": "第一页"
+}

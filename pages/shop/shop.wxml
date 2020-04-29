@@ -1,0 +1,14 @@
+<!--pages/shop/shop.wxml-->
+<view class="shop">
+    <view class="shop_top">
+      <button wx:for="{{ shopList }}" wx:key="index" class="btn {{ index===currentIndex?'active':'' }}"
+      catchtap="changeItem"
+      data-index="{{index}}">
+        <text>{{item.cname}}</text>
+      </button>
+    </view>
+
+    <view class="shop_con" wx:for="{{ shopList }}" wx:if="{{index===currentIndex}}" wx:key="index">
+    <text>{{item.content}}</text>
+    </view>
+</view>

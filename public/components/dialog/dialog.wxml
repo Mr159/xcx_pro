@@ -1,0 +1,6 @@
+<!--public/components/dialog/dialog.wxml-->
+<text>我是dialog组件</text>
+<text class="box">{{title}}</text>
+<slot name="before"></slot>
+<slot name="after"></slot>
+<view bindtap="confirm" class="my-bg">点击向父组件传值</view>

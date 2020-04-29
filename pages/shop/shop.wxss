@@ -1,0 +1,12 @@
+/* pages/shop/shop.wxss */
+.shop_top{
+  display: flex;
+}
+.active{
+  border-bottom: 1px solid blue;
+}
+.btn{
+  border-radius: 0;
+  margin: 0;
+  width: 25%;
+}
